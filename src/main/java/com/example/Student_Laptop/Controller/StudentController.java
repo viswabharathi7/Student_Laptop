@@ -17,6 +17,7 @@ public class StudentController {
     public Optional<Student> getStudent(){
         Optional<Student> student = studentRepository.findById(1l);
         return student;
+        System.out.print("from repo")
 
     }
 }
