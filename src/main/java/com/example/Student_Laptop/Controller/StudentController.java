@@ -16,7 +16,9 @@ public class StudentController {
     @RequestMapping("/getStudent")
     public Optional<Student> getStudent(){
         Optional<Student> student = studentRepository.findById(1l);
+        System.out.printf("hi");
         return student;
+
 
     }
 }
